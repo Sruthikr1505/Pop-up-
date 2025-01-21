@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop-up Browser</title>
+  <script>
+    function openPopup() {
+      var popup = window.open('', '_blank', 'width=800,height=600,scrollbars=yes');
+      popup.document.write('<html><head><title>Hacked!</title></head><body>');
+      popup.document.write('<h1 style="color: red; text-align: center;">You are hacked!</h1>');
+      popup.document.write('<p style="text-align: center;">This is just a prank message. Relax!</p>');
+      popup.document.write('</body></html>');
+    }
+  </script>
+</head>
+<body>
+
+  <a href="javascript:void(0);" onclick="openPopup();">Click here to open pop-up</a>
+
+</body>
+</html>
