@@ -3,34 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hacker Style Pop-up</title>
-  <style>
-    body {
-      background-color: black;
-      color: lime;
-      font-family: "Courier New", Courier, monospace;
-      text-align: center;
-      margin-top: 20%;
-    }
-
-    button {
-      background-color: black;
-      color: lime;
-      border: 2px solid lime;
-      padding: 10px 20px;
-      font-size: 20px;
-      font-family: "Courier New", Courier, monospace;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      text-shadow: 0 0 5px lime, 0 0 10px lime;
-    }
-
-    button:hover {
-      background-color: lime;
-      color: black;
-      text-shadow: none;
-    }
-  </style>
+  <title>Pop-up Message</title>
   <script>
     function showPopup() {
       alert("You are hacked! (Just kidding, it's a pop-up example)");
@@ -39,7 +12,7 @@
 </head>
 <body>
 
-  <button onclick="showPopup();">Click here for a pop-up</button>
+  <a href="javascript:void(0);" onclick="showPopup();">Click here for a pop-up</a>
 
 </body>
 </html>
